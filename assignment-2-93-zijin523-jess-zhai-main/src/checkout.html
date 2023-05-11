@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+  <link rel="stylesheet" href="./checkout.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script type="text/javascript" src="checkout.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="w3-container">
+      <div class="w3-content">
+        <details id="details">
+          <summary id="summary">Product Menu</summary>
+            <p><span class="item">Name</span><span class="price">Price/kg</span></p>
+            <p id='item0'><span class="item">apple</span><span class="price">10</span></p>
+            <p id='item1'><span class="item">banana</span><span class="price">7</span></p>
+        </details>
+      </div>
+    </div>
+    
+    <div>
+      <label for="item_text">Product</label>
+      <input type="text" class="item_text" id="item_text"/>
+    </div>
+    
+    <div>
+      <label for="item_amount">Price/kg</label>
+      <input type="text" class="item_amount" id="item_amount"/>
+    </div>
+    
+    <button class="additem" id="additem" type="button" onclick="addItemFront()">ADD</button>
+    <button class="deleteitem" id="deleteitem" type="button" onclick="deleteItem()">Delete</button>
+
+    <h2>Checkout System</h2>
+
+    <div class="container">
+      <h4>After Tax</h4>
+      <h1><span id="total">0</span></h1>
+
+      
+      <div class="inc-exp-container">
+        <div>
+          <h4>Subtotal</h4>
+          <p id="price" class="price">0</p>
+        </div>
+        <div>
+          <h4>Discount</h4>
+          <p id="discount" class="discount">0</p>
+        </div>
+      </div>
+
+      <h3>Cart</h3>
+      <ul id="list" class="list">
+        <li><span class="detail">Item</span>
+          <span class="number">Weight</span>
+          <span class="money">Price</span>
+          <span class="discount">Discount</span></li>
+      </ul>
+
+      <h3>Add</h3>
+
+      <div class="form-control">
+        <label for="text">Item</label>
+        <input type="text" id="text"/>
+      </div>
+
+      <div class="form-control">
+        <label for="text">Weight</label>
+        <input type="text" id="number"/>
+      </div>
+
+      <div class="form-control">
+        <label for="amount">Discount</label>
+        <input type="text" id="amount" value = "0"/>
+      </div>
+      
+      <button class="addTransition" id="adbtn" type="button" onclick="purchaseItem()">ADD</button>
+
+      <button class="deleteTransition" id="debtn" type="button" onclick="cancellItem()">DELETE</button>
+
+      <p id="success" class="alert">Succesfully Added</p>
+      <p id="itemError" class="alert">Invalid Item</p>
+      <p id="moneyError" class="alert">Invalid Prive/Weight/Discount</p>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #F7F7F7;
+  }
+  input:focus {
+    outline: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content h2 {
+    margin: 40px 0 10px 0;
+    font-size: 20px;
+  }
+  .content .container {
+    position: relative;
+  }
+  .content .container h1 {
+    margin-bottom: 20px;
+  }
+  .content .container .inc-exp-container {
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .content .container .inc-exp-container div {
+    width: 50%;
+    text-align: center;
+  }
+  .content .container .inc-exp-container div:first-child {
+    border-right: solid 3px #eee;
+  }
+  .content .container .inc-exp-container div h4 {
+    margin-bottom: 10px;
+  }
+  .content .container .inc-exp-container div .price {
+    font-size: 20px;
+  }
+  .content .container .inc-exp-container div .discount {
+    font-size: 20px;
+  }
+  .content .container h3 {
+    border-bottom: solid 1px #D4D4D4;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .content .container #list {
+    list-style-type: none;
+  }
+  .content .container #list li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #fff;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    position: relative;
+  }
+  .content .container #list li .detail {
+    flex: 1;
+    text-indent: 10px;
+  }
+  .content .container #list li .number {
+    flex: 1;
+    text-indent: 60px;
+  }
+  .content .container #list li .money {
+    flex: 1;
+    text-indent: 50px;
+  }
+  .content .container #list li .discount {
+    flex: 1;
+    text-indent: 30px;
+  }
+  .content .container #list li .del {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center ;
+    color: #fff;
+    background-color: #E74C3C ;
+    cursor: pointer;
+  }
+  .content .container .form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .container .form-control label {
+    font-weight: 600;
+  }
+  .content .container .form-control input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px 0;
+    text-indent: 8px;
+    font-size: 16px;
+    border: solid 1px #eee;
+  }
+  .content .container .addTransition {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    color: #fff;
+    background-color: grey;
+    border: none;
+    margin: 20px 0;
+  }
+  .content .container .deleteTransition {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    color: #fff;
+    background-color:  grey;
+    border: none;
+    margin-bottom: 5px 0;
+  }
+  .content .container .alert {
+    position: absolute;
+    top: -75px;
+    left: 0;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    transition: all .5s;
+    overflow: hidden;
+  }
+
+  .content .container #itemError {
+    background-color: #C65043;
+    box-shadow: 0 0 5px #C65043;
+    height: 0;
+  }
+
+  .content .container #moneyError {
+    background-color: #C65043;
+    box-shadow: 0 0 5px #C65043;
+    height: 0;
+  }
+
+  .content .container #success {
+    background-color: #40CF7B;
+    box-shadow: 0 0 5px #40CF7B;
+    height: 0;
+  }
+  
+  .additem {
+    width:100px;
+    border: 2px inset grey;
+    background-color:balck;
+    color:grey;
+    padding:10px;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  .deleteitem {
+    width:100px;
+    border: 2px inset grey;
+    background-color:balck;
+    color:grey;
+    padding:10px;
+    border: none;
+  }
+
+  .item_text{
+    font-weight: 600;
+    padding: 6px 12px; 
+    font-size: 14px; 
+    line-height: 1.428571429; 
+    color: #555555; 
+    vertical-align: middle;
+    border: none;
+    
+  }
+  .item_amount{
+    font-weight: 600;
+    padding: 6px 12px; 
+    margin: 5px;
+    font-size: 14px; 
+    line-height: 1.428571429; 
+    color: #555555; 
+    vertical-align: middle;
+    border: none;
+  }
+
+  .item{
+    margin-right: 50px;
+    font-size: 10px;
+  }
+
+  .price{
+    font-size: 10px;
+  }
+
+  summary {
+    font-size: 20px;
+    margin-top: 30px;
+  }
